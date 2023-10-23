@@ -1,13 +1,19 @@
 import _ from "lodash";
+
+import menuBar from "./components/menuBar/menuBar";
+
 import "./style.css";
 
+const content = document.querySelector(".content");
+
 function component() {
-  const element = document.createElement("div");
+  const element = document.createElement("h1");
 
   element.innerHTML = _.join(["hello", "webpack"], " ");
-  element.classList.add("hello");
 
   return element;
 }
+content.appendChild(menuBar());
+content.appendChild(component());
 
-document.body.appendChild(component());
+content.appendChild(menuBar());
