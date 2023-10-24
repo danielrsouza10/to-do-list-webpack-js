@@ -1,11 +1,28 @@
 import "./menuBarStyle.css";
 
 function menuBar() {
-  const menuComponent = document.createElement("p");
+  const menuComponent = document.createElement("div");
 
   menuComponent.innerHTML = `
-  <h1>menu-bar works</h1>
-  <div>And this return too</div>
+  <div class="menu-bar__content">
+    <div class="menu-bar__top">
+      <div class="menu-bar__brand">
+        <span class="material-symbols-outlined">app_badging</span>
+      </div>
+      <div class="menu-bar__icons">
+        <span class="material-symbols-outlined">grid_view</span>
+        <span class="material-symbols-outlined">task_alt</span>
+        <span class="material-symbols-outlined">chat</span>
+        <span class="material-symbols-outlined">settings</span>
+      </div>
+    </div>
+    <div class="menu-bar__bottom">
+      <span class="material-symbols-outlined">logout</span>  
+    </div>
+  
+  </div>
+  
+
   `;
 
   return menuComponent;

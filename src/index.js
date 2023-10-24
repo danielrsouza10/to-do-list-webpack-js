@@ -1,6 +1,7 @@
 import _ from "lodash";
 
 import menuBar from "./components/menuBar/menuBar";
+import sideBar from "./components/sideBar/sideBar";
 
 import "./style.css";
 
@@ -13,7 +14,7 @@ function component() {
 
   return element;
 }
-content.appendChild(menuBar());
-content.appendChild(component());
 
 content.appendChild(menuBar());
+content.appendChild(sideBar());
+content.appendChild(component());
